@@ -1,0 +1,20 @@
+<!-- Default form subscription -->
+<div class="row">
+  <div class="col-lg-5 col-md-7 col-sm-10 m-auto">
+    <form enctype="multipart/form-data" class="text-center border border-light p-5" method="POST" action="/add">
+      <p class="h4 mb-4">{{title}}</p>
+  <input name="title" type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Title">
+  <input name="description" type="text" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="
+  Description">
+   <input name="price" type="number" class="form-control mb-4" placeholder="
+  Price">
+    <div class="file-field">
+      <label for="file" class="btn btn-block my-2 btn-outline-secondary btn-rounded waves-effect float-left" style="cursor: cell;">
+        Choose file
+        <input type="file" name="img" id="file" class="d-none">
+      </label>
+    </div>
+  <button class="btn btn-info btn-block" type="submit">Submit</button>
+</form>
+  </div>
+</div>

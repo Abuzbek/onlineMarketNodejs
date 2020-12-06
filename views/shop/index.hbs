@@ -1,0 +1,50 @@
+
+ <div class="row">
+   {{#each date}}
+   {{date}}
+   <div class="col-lg-3 col-md-4 col-6">
+    <div class="card card-ecommerce">
+      <div class="view overlay">
+        <img src=images/{{img}} class="img-fluid" alt="">
+        <a>
+          <div class="mask rgba-white-slight waves-effect waves-light"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title mb-1">
+          <strong>
+            <a href="" class="dark-grey-text">
+              {{title}}
+            </a>
+          </strong>
+        </h5>
+        <p class="card-title">
+          {{description}}
+        </p>
+        <div class="card-footer pb-0">
+          <div class="row mb-0 align-items-center justify-content-between">
+            <span class="float-left">
+              <strong>
+                {{price}}$
+              </strong>
+            </span>
+              <button class="btn btn-floating m-0" data-toggle="tooltip" data-placement="top" id="addCart" title="" data-original-title="Add to Cart">
+                <a href="#!">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+ <style>
+  #addCart{
+    background-color: #2a3d66;
+  }
+  #addCart.added .fas{
+    color: #d789d7 !important;
+  }
+</style>

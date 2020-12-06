@@ -1,1 +1,6 @@
-
+.default-color{
+  background-color: #2a3d66 !important ;
+}
+.dropdown .dropdown-menu.dropdown-default .dropdown-item:hover{
+  background-color: #2a3d66 !important ;
+}
